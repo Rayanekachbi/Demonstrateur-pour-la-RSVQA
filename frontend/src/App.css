@@ -1,0 +1,690 @@
+/* ===== FONTS ===== */
+@font-face {
+    font-family: 'Eurostar';
+    src: url('eurostarblackextended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'EurostarBlackExtended', sans-serif;
+}
+
+/* ===== STRUCTURE DE BASE ===== */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.neon-white {
+  color: #ffffff;
+  text-shadow:
+    0 0 15px #ffffff;
+  font-weight: bold;
+}
+
+.homepage {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  min-height: 100vh;
+  text-align: left;
+  margin-top: 300px;
+  height: 100vh;
+}
+
+.intro {
+  z-index: 2;
+  max-width: 99%;
+  padding: 20px;
+  position: relative;
+  color: white;
+  font-size: 2px;
+}
+
+#homepage {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h1 {
+  font-family: "Eurostar", sans-serif;
+  font-size: 5rem;
+  margin: 0;
+  color: white;
+  text-shadow:
+    0 0 15px #ffffff;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Eurostar", sans-serif;
+  font-size: 2.5rem;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+h3 {
+  font-family: "Eurostar", sans-serif;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+p {
+  font-family: "Eurostar";
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+#datasets {
+  margin-top: auto;
+  padding-top: 2rem;
+  position: relative;
+  z-index: 1;
+
+}
+
+.section {
+  height: 90vh;
+  /* Chaque section prend tout l'écran */
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.circle-datasets-bg {
+  position: absolute;
+  transform: translate(-50%, -60%);
+  top: 60vh;
+  width: 400px;
+  height: 400px;
+  background: #ed2d2d;
+  background: radial-gradient(circle, rgba(237, 45, 45, 0.84) 0%, rgba(237, 221, 83, 0.78) 45%, rgba(43, 158, 156, 1) 86%);
+  border-radius: 90%;
+  left: 80vw;
+  filter: blur(30px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.circle-questions-bg {
+  position: absolute;
+  transform: translate(-50%, -60%);
+  top: 45vh;
+  width: 500px;
+  height: 500px;
+  background: #027be6;
+  background: radial-gradient(circle, rgba(2, 123, 230, 0.88) 0%, rgba(235, 235, 134, 0.78) 41%, rgba(245, 142, 224, 0.58) 77%, rgba(243, 245, 142, 1) 100%);
+  border-radius: 90%;
+  left: 35vw;
+  filter: blur(20px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.circle-questions-bg2 {
+  position: absolute;
+  transform: translate(-50%, -60%);
+  top: 50vh;
+  width: 300px;
+  height: 300px;
+  background: #f70202;
+  background: radial-gradient(circle, rgba(247, 2, 2, 0.88) 0%, rgba(235, 235, 134, 0.78) 54%, rgba(245, 142, 224, 0.58) 67%);
+  border-radius: 90%;
+  left: 50vw;
+  filter: blur(40px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.background-circle {
+  position: absolute;
+  transform: translate(-50%, -60%);
+  top: 50vh;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, #ff5e00, #7a00ff);
+  border-radius: 90%;
+  left: 50vw;
+  filter: blur(50px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===== Introduction ===== */
+.homepage {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  min-height: 100vh;
+  text-align: left;
+  margin-top: 300px;
+  height: 100vh;
+}
+
+
+
+.scroll-button {
+  padding: 10px 20px;
+  background: #ff5e00;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.background-circle {
+  position: absolute;
+  transform: translate(-50%, -60%);
+  top: 50vh;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #ff5e00, #7a00ff);
+  border-radius: 90%;
+  left: 50vw;
+  filter: blur(50px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ===== SECTION DATASETS ===== */
+.datasets-section {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 40px;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.dataset-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 15px;
+  z-index: 2;
+  margin-bottom: 30px;
+
+}
+
+/* ===== CARTES DE DATASET ===== */
+.dataset-card {
+  width: 200px;
+  height: 240px;
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 4px solid #007BFF;
+  /* Bordure bleue plus épaisse */
+  box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.6);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  /* Centre le texte dans la carte */
+  z-index: 2;
+  font-family: "Eurostar", sans-serif;
+}
+
+.dataset-card:hover {
+  transform: scale(1.1); 
+  z-index: 2; 
+}
+
+/* Image du dataset */
+.dataset-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #007BFF;
+}
+
+/* Nom du dataset CENTRÉ sous la carte */
+.dataset-name {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  background-color: #111;
+  margin: 0;
+  padding: 4px;
+  font-family: "Eurostar", sans-serif;
+
+}
+
+.add-dataset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  width: 200px;
+  height: 240px;
+  border-radius: 10px;
+  border: 4px dashed #974DFF;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-family: "Eurostar", sans-serif;
+
+}
+
+.add-icon {
+  font-size: 40px;
+  color: #974DFF;
+}
+
+.add-dataset:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(151, 77, 255, 0.8);
+}
+
+.dataset-info {
+  background-color: rgba(50, 61, 126, 0.772);
+  padding: 15px;
+  border-radius: 10px;
+  width: 620px;
+  text-align: left;
+  font-size: 20px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+  border: 4px solid #007BFF;
+  z-index: 2;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Eurostar", sans-serif;
+  opacity: 0.8;
+  color: white;
+  margin: 0.5rem auto;
+}
+
+
+/* ===== MESSAGE D'INSTRUCTIONS ===== */
+.dataset-instructions {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.dataset-instructions ul {
+  font-family: "Eurostar", sans-serif;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.content {
+  height: 100vh;
+  /* Prend toute la hauteur de l'écran */
+  overflow-y: auto;
+  /* Permet le scroll vertical */
+  padding: 20px;
+  color: white;
+  z-index: 2;
+
+}
+
+.back-button-container {
+  padding: 1rem 2rem;
+}
+
+.back-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Eurostar", sans-serif;
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #007BFF;
+}
+
+
+/* ===== GALLERIE D'IMAGES ===== */
+.image-gallery-container {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  z-index: 2;
+
+}
+
+.image-gallery {
+  margin-top: 10px;
+  text-align: left;
+  padding: 20px;
+  background-color: #002a5e;
+  color: white;
+  border-radius: 10px;
+  width: 65%;
+  margin: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  /* Grille responsive */
+  gap: 35px;
+  padding: 20px;
+  z-index: 2;
+}
+
+.image-thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
+  position: relative;
+}
+
+.image-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 94, 0, 0.7);
+}
+
+.image-number {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.page-btn {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid #007BFF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+  font-family: "Eurostar", sans-serif;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: #007BFF;
+}
+
+.page-btn.active {
+  background: #007BFF;
+  font-weight: bold;
+}
+
+.page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+
+
+/* ===== IMAGE SELECTIONNE ===== */
+
+
+/* Image sélectionnée */
+.selected-image-container {
+  display: flex;
+  /* Utilise Flexbox pour l'agencement des éléments enfants */
+  justify-content: center;
+  /* Centre les éléments enfants horizontalement sur l'axe principal */
+  align-items: center;
+  /* Aligne les éléments enfants au début de l'axe secondaire (vertical ici) */
+  gap: 50px;
+  /* Définit un espacement de 50 pixels entre les éléments enfants (image et contenu) */
+  padding: 30px;
+  /* Ajoute un espace intérieur de 30 pixels autour du contenu du conteneur */
+  min-height: 100vh;
+  color: White;
+}
+
+.selected-image {
+  height: 100%;
+  /* Définit une hauteur fixe de 500 pixels pour l'image */
+  margin-bottom: 10px;
+  /* Ajoute une marge inférieure de 10 pixels sous l'image pour l'espacer du nom */
+  width: 100%;
+  /* Définit une largeur fixe de 500 pixels pour l'image */
+  object-fit: contain;
+  border-radius: 10px;
+  border: 3px solid white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+
+.question-response-section {
+  margin-top: 30px;
+  width: 50%;
+  /* Prend la moitié de la largeur disponible du conteneur parent */
+  background: rgba(11, 34, 149, 0.7);
+  /* Définit un fond bleu semi-transparent */
+  border-radius: 15px;
+  /* Arrondit les bords du conteneur */
+  padding: 20px;
+  /* Ajoute un espace intérieur de 20 pixels */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  /* Ajoute une ombre plus prononcée sous le conteneur */
+  display: flex;
+  /* Utilise Flexbox pour l'agencement des éléments enfants */
+  flex-direction: column;
+  z-index: 2;
+}
+
+
+.question-response-section h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-top: 0;
+  border-bottom: 1px solid rgba(255, 94, 0, 0.5);
+  padding-bottom: 15px;
+}
+
+
+.qa-image-container {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  padding: 20px;
+  z-index: 1;
+}
+
+
+.image-section {
+  flex: 1;
+  max-width: 45%;
+  text-align: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.6);
+}
+
+.image-section h3 {
+  color: white;
+  text-align: center;
+}
+
+.qa-section {
+  flex: 1;
+  max-width: 50%;
+  background-color: rgba(11, 34, 149, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+
+/* Conteneur pour le tableau des questions/réponses avec une barre de défilement verticale */
+.table-wrapper {
+  position: flex;
+  max-height: 400px;
+  /* Définit une hauteur maximale de 400 pixels pour le conteneur */
+  overflow-y: auto;
+  /* Active la barre de défilement verticale lorsque le contenu dépasse la hauteur maximale */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Ajoute une bordure fine (blanche semi-transparente) autour du conteneur */
+  border-radius: 10px;
+  /* Arrondit les bords du conteneur */
+  margin-top: 20px;
+  /* Ajoute une marge supérieure de 20 pixels */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Définit un fond noir légèrement transparent */
+}
+
+/* Style pour le tableau */
+table {
+  width: 100%;
+  /* Prend toute la largeur disponible de son conteneur (.table-wrapper) */
+  border-collapse: collapse;
+  /* Combine les bordures des cellules du tableau en une seule bordure */
+  /* Les marges, fonds et bords sont gérés par le conteneur .table-wrapper pour le style général */
+}
+
+/* Style pour les en-têtes (<th>) et les cellules de données (<td>) du tableau */
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Ajoute une bordure fine (blanche semi-transparente) autour de chaque cellule */
+  padding: 12px;
+  /* Ajoute un espace intérieur de 12 pixels à chaque cellule */
+  text-align: center;
+  /* Centre le texte horizontalement dans chaque cellule */
+  font-size: 16px;
+  /* Définit une taille de police de 16 pixels */
+}
+
+/* Style spécifique pour les cellules d'en-tête (<th>) */
+th {
+  background-color: rgba(11, 34, 149, 0.5);
+  /* Définit un fond bleu légèrement plus clair pour les en-têtes */
+  font-weight: bold;
+  /* Met le texte en gras */
+}
+
+/* Style pour les lignes paires du tableau (pour un effet visuel) */
+tr:nth-child(even) {
+  background-color: rgba(9, 19, 130, 0.3);
+  /* Définit un fond bleu encore plus clair pour les lignes paires */
+}
+
+/* Style appliqué lorsqu'on survole une ligne du tableau */
+tr:hover {
+  background-color: rgba(11, 34, 149, 0.6);
+  /* Définit un fond bleu légèrement plus foncé au survol */
+}
+
+/* Style pour le champ de texte utilisé pour les questions personnalisées */
+.textarea {
+  width: 100%;
+  /* Prend toute la largeur disponible de son conteneur */
+  padding: 15px;
+  /* Ajoute un espace intérieur de 15 pixels */
+  border-radius: 10px;
+  /* Arrondit les bords */
+  border: none;
+  /* Supprime la bordure par défaut */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Définit un fond noir légèrement transparent */
+  color: #fff;
+  /* Texte en blanc */
+  font-size: 16px;
+  /* Définit une taille de police de 16 pixels */
+  margin-top: 15px;
+  /* Ajoute une marge supérieure de 15 pixels */
+  box-sizing: border-box;
+  /* Assure que le padding n'augmente pas la largeur totale */
+}
+
+/* Style pour les messages d'erreur */
+.error {
+  color: #ff6b6b;
+  /* Définit la couleur du texte en rouge orangé */
+  font-weight: bold;
+  /* Met le texte en gras */
+  margin-top: 10px;
+  /* Ajoute une marge supérieure de 10 pixels */
+}
+
+
+/* Style pour le menu deroulant du choix du modele */
+.model-selection select {
+  background: rgba(11, 34, 149, 0.7);
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 123, 255, 0.89);
+  color: #fff;
+}
+
+/* Style pour le bouton d'envoi de la question personnalisée */
+.submitButton {
+  margin-top: 10px;
+  /* Ajoute une marge supérieure de 10 pixels */
+  padding: 10px 20px;
+  /* Ajoute un espace intérieur de 10 pixels en haut/bas et 20 pixels à gauche/droite */
+  background-color: rgba(0, 123, 255, 0.6);
+  /* Définit un fond bleu semi-transparent */
+  color: #fff;
+  /* Texte en blanc */
+  border-radius: 8px;
+  /* Arrondit les bords */
+  border: none;
+  /* Supprime la bordure par défaut */
+  cursor: pointer;
+  /* Change le curseur de la souris au survol pour indiquer que c'est cliquable */
+  transition: background-color 0.3s;
+  /* Ajoute une  transition douce pour le changement de couleur de fond */
+}
+
+/* Style pour le bouton d'envoi de la question personnalisé au survol */
+.submitButton:hover {
+  background-color: rgba(0, 123, 255, 0.89);
+  /* Rend le fond du bouton légèrement plus opaque au survol */
+}
