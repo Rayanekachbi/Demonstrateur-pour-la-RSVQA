@@ -60,18 +60,10 @@ Document de référence : [https://arxiv.org/abs/2003.07333](https://arxiv.org/a
 
 ---
 
-##  Fichiers volumineux avec Git LFS
-
-Ce projet utilise [Git Large File Storage (LFS)](https://git-lfs.github.com) pour gérer certains fichiers volumineux (modèles, datasets...).
-
-### ⚙️ Étapes à suivre
-
 Avant de cloner ou de travailler sur le projet, installez Git LFS :
 
 ```bash
 git lfs install
-
-```bash
 git clone https://github.com/Rayanekachbi/Demonstrateur-pour-la-RSVQA
 cd Demonstrateur-pour-la-RSVQA
 ```
@@ -244,18 +236,12 @@ Reference paper: [https://arxiv.org/abs/2003.07333](https://arxiv.org/abs/2003.0
 
 ---
 
-##  Large Files with Git LFS
-
-This project uses [Git Large File Storage (LFS)](https://git-lfs.github.com) to handle large files (models, datasets, etc.).
-
 ###  What to do
 
 Before cloning or working with the repository, install Git LFS:
 
 ```bash
 git lfs install
-
-```bash
 git clone https://github.com/Rayanekachbi/Demonstrateur-pour-la-RSVQA
 cd Demonstrateur-pour-la-RSVQA
 ```
