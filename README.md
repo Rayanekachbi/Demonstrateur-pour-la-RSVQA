@@ -3,9 +3,9 @@ Scroll down for english version !
 
 # Démonstrateur RSVQA – Projet L2V
 
-**Encadrant :** Boussaid Hichem
-**Catégorie :** Application scientifique
-**Technologies :** Python,Flask, PyTorch, NumPy
+**Encadrant :** Boussaid Hichem  
+**Catégorie :** Application scientifique  
+**Technologies :** Python,Flask, PyTorch, NumPy  
 **Mots-clés :** RSVQA, NLP, Deep Learning, Remote Sensing
 
 ---
@@ -50,8 +50,8 @@ Ce démonstrateur propose une **interface graphique** permettant d’utiliser un
 
 ## Références
 
-Lobry, S., Murray, J., Marcos, D., & Tuia, D. (2019).
-*Visual Question Answering From Remote Sensing Images*. IGARSS 2019
+Lobry, S., Murray, J., Marcos, D., & Tuia, D. (2019).  
+*Visual Question Answering From Remote Sensing Images*. IGARSS 2019  
 Document de référence : [https://arxiv.org/abs/2003.07333](https://arxiv.org/abs/2003.07333)
 
 ---
@@ -179,9 +179,9 @@ Le démonstrateur RSVQA est désormais opérationnel.
 
 # RSVQA Demonstrator – L2V Project
 
-**Supervisor:** Boussaid Hichem
-**Category:** Scientific Application
-**Technologies:** Python,Flask, PyTorch, NumPy
+**Supervisor:** Boussaid Hichem  
+**Category:** Scientific Application  
+**Technologies:** Python,Flask, PyTorch, NumPy  
 **Keywords:** RSVQA, NLP, Deep Learning, Remote Sensing
 
 ---
@@ -226,8 +226,8 @@ This demonstrator provides a **graphical interface** to apply an RSVQA model to 
 
 ## References
 
-Lobry, S., Murray, J., Marcos, D., & Tuia, D. (2019).
-*Visual Question Answering From Remote Sensing Images*. IGARSS 2019
+Lobry, S., Murray, J., Marcos, D., & Tuia, D. (2019).  
+*Visual Question Answering From Remote Sensing Images*. IGARSS 2019  
 Reference paper: [https://arxiv.org/abs/2003.07333](https://arxiv.org/abs/2003.07333)
 
 ---
