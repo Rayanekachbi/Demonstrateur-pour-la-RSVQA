@@ -5,7 +5,7 @@ Scroll down for english version !
 
 **Encadrant :** Boussaid Hichem
 **Catégorie :** Application scientifique
-**Technologies :** Python, PyTorch, NumPy
+**Technologies :** Python,Flask, PyTorch, NumPy
 **Mots-clés :** RSVQA, NLP, Deep Learning, Remote Sensing
 
 ---
@@ -58,6 +58,19 @@ Document de référence : [https://arxiv.org/abs/2003.07333](https://arxiv.org/a
 
 ## Installation
 
+---
+
+##  Fichiers volumineux avec Git LFS
+
+Ce projet utilise [Git Large File Storage (LFS)](https://git-lfs.github.com) pour gérer certains fichiers volumineux (modèles, datasets...).
+
+### ⚙️ Étapes à suivre
+
+Avant de cloner ou de travailler sur le projet, installez Git LFS :
+
+```bash
+git lfs install
+
 ```bash
 git clone https://github.com/Rayanekachbi/Demonstrateur-pour-la-RSVQA
 cd Demonstrateur-pour-la-RSVQA
@@ -81,6 +94,7 @@ python -m ensurepip --upgrade
 
 ---
 
+
 ## Configuration du Backend (API)
 
 1. Ouvrez un terminal dans le dossier du projet.
@@ -95,6 +109,15 @@ cd backend
 ```bash
 py -3 -m venv .venv
 .venv\Scripts\activate
+```
+
+## Téléchargement des fichiers lourds
+
+Certains fichiers nécessaires (modèle et datasets) dépassent la limite autorisée par GitHub (100 Mo) et sont donc stockés en dehors du dépôt.
+
+```bash
+pip install gdown
+python download_assets.py
 ```
 
 4. Installez les dépendances :
@@ -166,7 +189,7 @@ Le démonstrateur RSVQA est désormais opérationnel.
 
 **Supervisor:** Boussaid Hichem
 **Category:** Scientific Application
-**Technologies:** Python, PyTorch, NumPy
+**Technologies:** Python,Flask, PyTorch, NumPy
 **Keywords:** RSVQA, NLP, Deep Learning, Remote Sensing
 
 ---
@@ -219,6 +242,19 @@ Reference paper: [https://arxiv.org/abs/2003.07333](https://arxiv.org/abs/2003.0
 
 ## Installation
 
+---
+
+##  Large Files with Git LFS
+
+This project uses [Git Large File Storage (LFS)](https://git-lfs.github.com) to handle large files (models, datasets, etc.).
+
+###  What to do
+
+Before cloning or working with the repository, install Git LFS:
+
+```bash
+git lfs install
+
 ```bash
 git clone https://github.com/Rayanekachbi/Demonstrateur-pour-la-RSVQA
 cd Demonstrateur-pour-la-RSVQA
@@ -256,6 +292,16 @@ cd backend
 ```bash
 py -3 -m venv .venv
 .venv\Scripts\activate
+```
+
+## Downloading Large Files
+
+Some required files (model and datasets) exceed GitHub's file size limit (100 MB) and are therefore stored externally.
+
+
+```bash
+pip install gdown
+python download_assets.py
 ```
 
 4. Install required dependencies:

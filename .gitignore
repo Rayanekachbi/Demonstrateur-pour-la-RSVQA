@@ -1,0 +1,4 @@
+# .gitignore
+backend/BigModel_30.tar
+backend/datasets/High_Resolution/all_*.json
+backend/datasets/High_Resolution/USGS_split_train_questions.json
